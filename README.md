@@ -20,7 +20,7 @@
 	seed, _ := NewSeed(mn, "", lang)
 	params := &BTCParams
 	k, _ := NewKey(seed, params)
-	fmt.Println("seed", k.SeedString())
+	fmt.Println("seed:", k.SeedString())
 	path := NewBIP44DerivationPath(params.HDCoinType, 0, 0, 0)
 	fmt.Println("path:", path.PathString())
 	ck, _ := k.NewChildkey(path)

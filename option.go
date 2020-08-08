@@ -47,6 +47,11 @@ var (
 		Symbol: "ZEC",
 		Params: chaincfg.MainNetParams,
 	}
+	BSVParams = Option{
+		Symbol: "BSV",
+		Params: chaincfg.MainNetParams,
+	}
+
 )
 
 // https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -58,6 +63,8 @@ func init() {
 	LTCParams.HDCoinType = 2
 
 	ZECParams.HDCoinType = 133
+
+	BSVParams.HDCoinType = 236
 
 	DOGEParams.PubKeyHashAddrID = 0x1e // 30
 	DOGEParams.ScriptHashAddrID = 0x16 // 22
