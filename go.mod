@@ -1,4 +1,4 @@
-module hhwallet/hdwallets
+module github.com/hhwallet/hdwallets
 
 go 1.14
 

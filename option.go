@@ -51,7 +51,10 @@ var (
 		Symbol: "BSV",
 		Params: chaincfg.MainNetParams,
 	}
-
+	//XRPParams = Option{
+	//	Symbol: "XRP",
+	//	Params: chaincfg.MainNetParams,
+	//}
 )
 
 // https://github.com/satoshilabs/slips/blob/master/slip-0044.md
@@ -65,6 +68,8 @@ func init() {
 	ZECParams.HDCoinType = 133
 
 	BSVParams.HDCoinType = 236
+
+	//XRPParams.HDCoinType = 144
 
 	DOGEParams.PubKeyHashAddrID = 0x1e // 30
 	DOGEParams.ScriptHashAddrID = 0x16 // 22
